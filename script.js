@@ -1,5 +1,6 @@
-console.log("Suman Agro Clinic Loaded!");
 import * as THREE from "three";
+
+console.log("Suman Agro Clinic Loaded!");
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -42,12 +43,3 @@ renderer.render(scene,camera);
 }
 
 animate();
-Camera 👀
-      |
-      v
-
-   🟩 Cube
-      |
-      v
-
- Renderer → Canvas → Screen
