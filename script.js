@@ -13,3 +13,4 @@ canvas: document.getElementById("bg")
 });
 
 renderer.setSize(window.innerWidth, window.innerHeight);
+const geometry = new THREE.BoxGeometry();
