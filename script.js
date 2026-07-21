@@ -17,3 +17,37 @@ const geometry = new THREE.BoxGeometry();
 const material = new THREE.MeshStandardMaterial({
 color:0x00ff66
 });
+const cube = new THREE.Mesh(
+geometry,
+material
+);
+
+scene.add(cube);
+const light = new THREE.DirectionalLight(0xffffff,2);
+
+light.position.set(5,5,5);
+
+scene.add(light);
+camera.position.z = 3;
+renderer.render(scene,camera);
+function animate(){
+
+requestAnimationFrame(animate);
+
+cube.rotation.x += 0.01;
+cube.rotation.y += 0.01;
+
+renderer.render(scene,camera);
+
+}
+
+animate();
+Camera 👀
+      |
+      v
+
+   🟩 Cube
+      |
+      v
+
+ Renderer → Canvas → Screen
